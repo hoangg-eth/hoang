@@ -22,23 +22,15 @@ const vi = {
     social_networks: [
       {
         icon: "SiGmail",
-        link: "mailto:duyntp2000@gmail.com",
+        link: "mailto:phungthinguyet1211@gmail.com",
       },
       {
         icon: "SiLinkedin",
-        link: "https://www.linkedin.com/in/duyntp2000/",
-      },
-      {
-        icon: "SiGithub",
-        link: "https://github.com/howznguyen",
-      },
-      {
-        icon: "SiGitlab",
-        link: "https://gitlab.com/howznguyen",
+        link: "www.linkedin.com/in/phungnguyet1989",
       },
       {
         icon: "SiFacebook",
-        link: "https://www.facebook.com/howznguyen",
+        link: "https://www.facebook.com/giotgiot/",
       },
       
     ],
@@ -48,25 +40,15 @@ const vi = {
   },
   home: {
     intro: {
-      header: "Xin chào, Mình là Howz Nguyễn",
+      header: "Xin chào, Xin chào, Mình là Phùng Nguyệt",
       description:
-        "Mình hiện tại đang là một Lập Trình Viên Fullstack. Đây là một website mình tạo ra với mong muốn được chia sẻ kiến thức của mình đến với mọi người. Cảm ơn mọi người đã ghé qua. ❤️",
+        "Mình hiện đang là nhân viên Đăng kí thuốc ở Hà Nội, Việt Nam. Tuy nhiên, blog này không chỉ viết về công việc của mình mà nó còn là nơi để mình chia sẻ về cuộc sống hàng ngày của mình.  ❤️",
       image: "/assets/images/orion-nebula.jpg",
       links: [
         {
-          icon: "HiOutlineNewspaper",
-          title: "Resume",
-          link: "https://github.com/howznguyen/my-resume/blob/main/pdf/cv_en_vi_howznguyen.pdf",
-        },
-        {
           icon: "FaFacebook",
-          title: "howznguyen",
-          link: "https://facebook.com/howznguyen/",
-        },
-        {
-          icon: "FaGithub",
-          title: "howznguyen",
-          link: "https://github.com/howznguyen",
+          title: "PhungNguyet",
+          link: "https://www.facebook.com/giotgiot",
         },
       ],
     },
