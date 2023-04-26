@@ -23,27 +23,17 @@ const en = {
       {
         title: "Mail",
         icon: "SiGmail",
-        link: "mailto:duyntp2000@gmail.com",
+        link: "mailto:phungthinguyet1211@gmail.com",
       },
       {
         title: "Linkedin",
         icon: "SiLinkedin",
-        link: "https://www.linkedin.com/in/duyntp2000/",
-      },
-      {
-        title: "Github",
-        icon: "SiGithub",
-        link: "https://github.com/howznguyen",
-      },
-      {
-        title: "Gitlab",
-        icon: "SiGitlab",
-        link: "https://gitlab.com/howznguyen",
+        link: "https://www.linkedin.com/in/phungnguyet1989/",
       },
       {
         title: "Facebook",
         icon: "SiFacebook",
-        link: "https://www.facebook.com/howznguyen",
+        link: "https://www.facebook.com/giotgiot/",
       },
       
     ],
@@ -53,25 +43,15 @@ const en = {
   },
   home: {
     intro: {
-      header: "Hi, I'm Howz Nguyen",
+      header: "Hi, I'm Phung Nguyet",
       description:
-        "I am currently a Fullstack Developer. This is a website I created with the desire to share my knowledge to everyone. Thank you to everyone who visited. ❤️",
+        "I am currently a Regulatory Affair Executive. This website is not about my jobs but about my life. ❤️",
       image: "/assets/images/orion-nebula.jpg",
       links: [
         {
-          icon: "HiOutlineNewspaper",
-          title: "Resume",
-          link: "https://github.com/howznguyen/my-resume/blob/main/pdf/cv_en_vi_howznguyen.pdf",
-        },
-        {
           icon: "FaFacebook",
-          title: "howznguyen",
-          link: "https://facebook.com/howznguyen/",
-        },
-        {
-          icon: "FaGithub",
-          title: "howznguyen",
-          link: "https://github.com/howznguyen",
+          title: "phungnguyet",
+          link: "https://www.facebook.com/giotgiot/",
         },
       ],
     },
@@ -81,23 +61,17 @@ const en = {
       {
         name: "Knowledge",
         description:
-          "Related posts about programming knowledge and algorithms.",
+          "Related posts about regulation.",
         value: ["code", "algorithm"],
       },
       {
         name: "Tutorial & Tips",
-        description: "Tutorials or tips about programming and technology.",
+        description: "Tutorials or tips about life.",
         value: ["tutorial", "tip"],
       },
       {
-        name: "Notion",
-        description:
-          "Articles with content about Notion and utilities around Notion.",
-        value: ["notion"],
-      },
-      {
         name: "Other",
-        description: "The posts are not related to technology topics.",
+        description: "The posts are not related to above topics.",
         value: ["other"],
       },
     ],
