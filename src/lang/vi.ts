@@ -51,13 +51,13 @@ const vi = {
     read_more: "Xem thêm",
     categories: [
       {
-        name: "Kiến thức",
+        name: "Web3",
         description:
           "Các bài viết liên quan về Web3.",
         value: ["code", "algorithm"],
       },
       {
-        name: "Tutorial & Tips",
+        name: "Self Development",
         description:
           "Các bài viết hướng dẫn hoặc mẹo cuộc sống.",
         value: ["tutorial", "tip"],

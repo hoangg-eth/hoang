@@ -18,7 +18,7 @@ const en = {
       {
         title: "Mail",
         icon: "SiGmail",
-        link: "mailto:phungthinguyet1211@gmail.com",
+        link: "mailto:inguyenhuyhoang@gmail.com",
       },
       {
         title: "Linkedin",
