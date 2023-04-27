@@ -17,15 +17,15 @@ const vi = {
     social_networks: [
       {
         icon: "SiGmail",
-        link: "mailto:phungthinguyet1211@gmail.com",
+        link: "mailto:inguyenhuyhoang@gmail.com",
       },
       {
         icon: "SiLinkedin",
-        link: "www.linkedin.com/in/phungnguyet1989",
+        link: "www.linkedin.com/in/nguyenhuyhoang11",
       },
       {
         icon: "SiFacebook",
-        link: "https://www.facebook.com/giotgiot/",
+        link: "https://www.facebook.com/NguyenHuyHoangOfficial",
       },
       
     ],
@@ -37,13 +37,13 @@ const vi = {
     intro: {
       header: "Xin chào, Mình là Hoàng Nguyễn",
       description:
-        "Hế lô mấy cưng",
+        "Chào mừng mọi người đến với blog của mình!",
       image: "/assets/images/myview.jpg",
       links: [
         {
           icon: "FaFacebook",
-          title: "PhungNguyet",
-          link: "https://www.facebook.com/giotgiot",
+          title: "Hoang Profile",
+          link: "https://www.facebook.com/NguyenHuyHoangOfficial",
         },
       ],
     },
@@ -53,7 +53,7 @@ const vi = {
       {
         name: "Kiến thức",
         description:
-          "Các bài viết liên quan về đăng kí thuốc.",
+          "Các bài viết liên quan về Web3.",
         value: ["code", "algorithm"],
       },
       {

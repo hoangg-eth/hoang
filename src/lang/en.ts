@@ -23,12 +23,12 @@ const en = {
       {
         title: "Linkedin",
         icon: "SiLinkedin",
-        link: "https://www.linkedin.com/in/phungnguyet1989/",
+        link: "https://www.linkedin.com/in/nguyenhuyhoang11/",
       },
       {
         title: "Facebook",
         icon: "SiFacebook",
-        link: "https://www.facebook.com/giotgiot/",
+        link: "https://www.facebook.com/NguyenHuyHoangOfficial/",
       },
       
     ],
@@ -45,7 +45,7 @@ const en = {
       links: [
         {
           icon: "FaFacebook",
-          title: "phungnguyet",
+          title: "Visit Hoang Profile",
           link: "https://www.facebook.com/giotgiot/",
         },
       ],
