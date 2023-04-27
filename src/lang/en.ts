@@ -46,7 +46,7 @@ const en = {
       header: "Hi, I'm Phung Nguyet",
       description:
         "I am currently a Regulatory Affair Executive. This website is not about my jobs but about my life. ❤️",
-      image: "/assets/images/orion-nebula.jpg",
+      image: "/assets/images/myview.jpg",
       links: [
         {
           icon: "FaFacebook",
