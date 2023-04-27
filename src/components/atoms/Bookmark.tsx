@@ -78,7 +78,7 @@ const Bookmark = ({ url }: BookmarkProps) => {
                 {dataUrl?.description}
               </div>
               <div className="text-sm text-gray-600 dark:text-gray-400 w-full max-w-[600px] overflow-hidden max-h-6 md:h-6 flex">
-                {dataUrl.logo && <Image width={20} height={20} src={dataUrl.logo} alt={dataUrl?.title} className="pl-0 p-1 inline"/>}
+                {dataUrl.logo && <Image width={20} height={20} src={dataUrl.logo} alt={dataUrl?.title} className="p-0 inline"/>}
                 <span className="py-1">{url}</span>
               </div>
             </div>

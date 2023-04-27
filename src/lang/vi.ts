@@ -13,11 +13,6 @@ const vi = {
   footer: {
     about_me: "Tìm hiểu về mình",
     links: [
-      // // Format link in Footer
-      // {
-      //   title: "Example #1",
-      //   link: "#",
-      // },
     ],
     social_networks: [
       {
@@ -40,9 +35,9 @@ const vi = {
   },
   home: {
     intro: {
-      header: "Xin chào, Mình là Phùng Nguyệt",
+      header: "Xin chào, Mình là Hoàng Nguyễn",
       description:
-        "Mình hiện đang là nhân viên Đăng kí thuốc ở Hà Nội, Việt Nam. Tuy nhiên, blog này không chỉ viết về công việc của mình mà nó còn là nơi để mình chia sẻ về cuộc sống hàng ngày của mình.  ❤️",
+        "Hế lô mấy cưng",
       image: "/assets/images/myview.jpg",
       links: [
         {

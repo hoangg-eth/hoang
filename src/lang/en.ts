@@ -13,11 +13,6 @@ const en = {
   footer: {
     about_me: "About me",
     links: [
-      // // Format link in Footer
-      // {
-      //   title: "Example #1",
-      //   link: "#",
-      // },
     ],
     social_networks: [
       {
@@ -43,7 +38,7 @@ const en = {
   },
   home: {
     intro: {
-      header: "Hi, I'm Phung Nguyet",
+      header: "Hi, I'm Hoang",
       description:
         "I am currently a Regulatory Affair Executive. This website is not about my jobs but about my life. ❤️",
       image: "/assets/images/myview.jpg",
