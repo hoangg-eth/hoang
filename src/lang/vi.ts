@@ -43,7 +43,7 @@ const vi = {
       header: "Xin chào, Xin chào, Mình là Phùng Nguyệt",
       description:
         "Mình hiện đang là nhân viên Đăng kí thuốc ở Hà Nội, Việt Nam. Tuy nhiên, blog này không chỉ viết về công việc của mình mà nó còn là nơi để mình chia sẻ về cuộc sống hàng ngày của mình.  ❤️",
-      image: "/assets/images/orion-nebula.jpg",
+      image: "/assets/images/myview.jpg",
       links: [
         {
           icon: "FaFacebook",
