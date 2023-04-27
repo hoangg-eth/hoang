@@ -58,13 +58,13 @@ const vi = {
       {
         name: "Kiến thức",
         description:
-          "Các bài viết liên quan về kiến thức lập trình và thuật toán.",
+          "Các bài viết liên quan về đăng kí thuốc.",
         value: ["code", "algorithm"],
       },
       {
         name: "Tutorial & Tips",
         description:
-          "Các bài viết hướng dẫn hoặc mẹo về lập trình và công nghệ.",
+          "Các bài viết hướng dẫn hoặc mẹo cuộc sống.",
         value: ["tutorial", "tip"],
       },
       {
@@ -75,7 +75,7 @@ const vi = {
       },
       {
         name: "Khác",
-        description: "Các bài viết không thuộc chủ đề công nghệ.",
+        description: "Các bài viết không thuộc các chủ đề trên.",
         value: ["other"],
       },
     ],
