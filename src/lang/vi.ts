@@ -38,7 +38,7 @@ const vi = {
       header: "Xin chào, Mình là Hoàng Nguyễn",
       description:
         "Chào mừng mọi người đến với blog của mình!",
-      image: "/assets/images/myview.jpg",
+      image: "/assets/images/myview.png",
       links: [
         {
           icon: "FaFacebook",

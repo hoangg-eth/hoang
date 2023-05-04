@@ -41,7 +41,7 @@ const en = {
       header: "Hi, I'm Hoang",
       description:
         "I am currently a Regulatory Affair Executive. This website is not about my jobs but about my life. ❤️",
-      image: "/assets/images/myview.jpg",
+      image: "/assets/images/myview.png",
       links: [
         {
           icon: "FaFacebook",

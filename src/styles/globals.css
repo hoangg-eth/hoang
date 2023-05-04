@@ -7,7 +7,7 @@
 
 @layer base {
   body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
     /* @apply bg-gray-200; */
   }
 
@@ -75,10 +75,6 @@
   .rotate-lg-6 {
     transform: rotate(6deg);
   }
-}
-
-.fancy-border-radius {
-  border-radius: 53% 47% 52% 48% / 36% 41% 59% 64%;
 }
 
 [data-fade] {
