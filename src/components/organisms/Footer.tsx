@@ -8,7 +8,7 @@ const Footer = ({}: FooterProps) => {
   
   return (
     <footer className="mt-4 pb-2">
-      <main className="layout flex flex-col items-center border-t pt-6 dark:border-gray-600">
+      <main className="mb-3 layout flex flex-col items-center border-t pt-6 dark:border-gray-600">
         <div className="flex flex-wrap justify-center gap-y-4 gap-x-8">
             {trans.footer.links && trans.footer.links.map((item: any, i: number) => (
               <Link
@@ -31,36 +31,6 @@ const Footer = ({}: FooterProps) => {
           )}
 
         </div>
-
-        <p className="mt-4 text-sm text-gray-600 dark:text-gray-300">
-          © {new Date().getFullYear()} - {trans.footer.build_with}
-          <Link href="https://nextjs.org/" target="_blank" >
-            Next.js
-          </Link>
-          ,{" "}
-          <Link
-            href="https://tailwindcss.com/"
-            target="_blank"
-          >
-            Tailwind CSS
-          </Link>
-          ,{" "}
-          <Link
-            href="https://notion.so/"
-            target="_blank"
-          >
-            Notion
-          </Link>
-          . {trans.footer.develop_by}
-          <Link
-            href="https://github.com/howznguyen"
-            target="_blank"
-          >
-            @howznguyen
-          </Link>
-          {trans.footer.with} ❤️
-          .
-        </p>
       </main>
     </footer>
   )
