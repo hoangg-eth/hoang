@@ -5,7 +5,7 @@ interface LogoProps {
   title: string;
 }
 
-const Logo = ({title}: LogoProps) => {
+const Logo = ({ title }: LogoProps) => {
   return (
     <Link href="/" className="flex items-center mr-10">
       <div className="flex items-center justify-center rounded-lg mr-2">
@@ -13,7 +13,7 @@ const Logo = ({title}: LogoProps) => {
           width={48}
           height={48}
           className="h-[48px] w-[48px]"
-          src="/assets/images/logo.png"
+          src="/assets/images/logo.svg"
           alt="Logo"
         />
       </div>

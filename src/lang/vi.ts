@@ -1,19 +1,19 @@
+import Link3Icon from "@/components/atoms/Link3Icon";
 import moment from "moment";
 
 const vi = {
-  lang:[
+  lang: [
     { value: "en", label: "Eng" },
     { value: "vi", label: "Vie" },
   ],
   header: {
-    open_navigation : "Open Navigation",
-    close_navigation : "Close Navigation",
+    open_navigation: "Open Navigation",
+    close_navigation: "Close Navigation",
     theme_switcher: "Theme Switcher",
   },
   footer: {
     about_me: "Tìm hiểu về mình",
-    links: [
-    ],
+    links: [],
     social_networks: [
       {
         icon: "SiGmail",
@@ -27,7 +27,6 @@ const vi = {
         icon: "SiFacebook",
         link: "https://www.facebook.com/NguyenHuyHoangOfficial",
       },
-      
     ],
     develop_by: "Phát triển bởi ",
     build_with: "Xây dựng bằng ",
@@ -36,12 +35,11 @@ const vi = {
   home: {
     intro: {
       header: "Xin chào, Mình là Hoàng Nguyễn",
-      description:
-        "Chào mừng mọi người đến với blog của mình!",
+      description: "Chào mừng mọi người đến với blog của mình!",
       image: "/assets/images/myview.png",
       links: [
         {
-          icon: "FaFacebook",
+          icon: "SiFacebook",
           title: "Hoang Profile",
           link: "https://www.facebook.com/NguyenHuyHoangOfficial",
         },
@@ -52,14 +50,12 @@ const vi = {
     categories: [
       {
         name: "Web3",
-        description:
-          "Các bài viết liên quan về Web3.",
+        description: "Các bài viết liên quan về Web3.",
         value: ["code", "algorithm"],
       },
       {
         name: "Self Development",
-        description:
-          "Các bài viết hướng dẫn hoặc mẹo cuộc sống.",
+        description: "Các bài viết hướng dẫn hoặc mẹo cuộc sống.",
         value: ["tutorial", "tip"],
       },
       {
@@ -81,7 +77,10 @@ const vi = {
       const days = 5;
       let raw = moment(datetime);
       let duration = moment.duration(moment().diff(datetime));
-      const _datetime = (duration.asHours() > 24 * days) ? raw.format('DD/MM/YYYY HH:mm') : raw.fromNow();
+      const _datetime =
+        duration.asHours() > 24 * days
+          ? raw.format("DD/MM/YYYY HH:mm")
+          : raw.fromNow();
       return `Được đăng vào ${_datetime} bởi ${author}.`;
     },
     reading_time: (min: any) => {
@@ -108,18 +107,19 @@ const vi = {
     post_by_tag: "Các bài viết của tag:",
   },
   error_page: {
-    404 : {
+    404: {
       title: "Trang Không Tồn Tại",
       head: "Xin lỗi, mình không thể tìm thấy trang này.",
       desc: "Nhưng đừng lo, bạn có thể tìm thấy nhiều thứ khác trên trang chủ của mình.",
-      home_button: "Trang Chủ"
-    }
+      home_button: "Trang Chủ",
+    },
   },
   common: {
     error: "Lỗi",
     is_loading: "Đang tải...",
-    process_take_few_second: "Quá trình này có thể mất vài giây, vui lòng không đóng trang này.",
-  }
+    process_take_few_second:
+      "Quá trình này có thể mất vài giây, vui lòng không đóng trang này.",
+  },
 };
 
 export default vi;

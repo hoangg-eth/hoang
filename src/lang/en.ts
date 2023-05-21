@@ -1,19 +1,18 @@
 import moment from "moment";
 
 const en = {
-  lang:[
+  lang: [
     { value: "en", label: "Eng" },
     { value: "vi", label: "Vie" },
   ],
   header: {
-    open_navigation : "Open Navigation",
-    close_navigation : "Close Navigation",
+    open_navigation: "Open Navigation",
+    close_navigation: "Close Navigation",
     theme_switcher: "Theme Switcher",
   },
   footer: {
     about_me: "About me",
-    links: [
-    ],
+    links: [],
     social_networks: [
       {
         title: "Mail",
@@ -30,7 +29,6 @@ const en = {
         icon: "SiFacebook",
         link: "https://www.facebook.com/NguyenHuyHoangOfficial/",
       },
-      
     ],
     develop_by: "Developed by ",
     build_with: "Built with ",
@@ -55,8 +53,7 @@ const en = {
     categories: [
       {
         name: "Knowledge",
-        description:
-          "Related posts about regulation.",
+        description: "Related posts about regulation.",
         value: ["code", "algorithm"],
       },
       {
@@ -77,7 +74,10 @@ const en = {
       const days = 5;
       let raw = moment(datetime);
       let duration = moment.duration(moment().diff(datetime));
-      const _datetime = (duration.asHours() > 24 * days) ? raw.format('DD/MM/YYYY HH:mm') : raw.fromNow();
+      const _datetime =
+        duration.asHours() > 24 * days
+          ? raw.format("DD/MM/YYYY HH:mm")
+          : raw.fromNow();
       return `Published at ${_datetime} by ${author}.`;
     },
     reading_time: (min: any) => {
@@ -88,7 +88,7 @@ const en = {
     },
     tags: "Tags",
     relate_post: "Realted Posts:",
-    table_of_contents: "Table of Contents"
+    table_of_contents: "Table of Contents",
   },
   blog: {
     blog: "Blog",
@@ -105,18 +105,19 @@ const en = {
     post_by_tag: "Posts by tag:",
   },
   error_page: {
-    404 : {
+    404: {
       title: "Page Not Found",
       head: "Sorry, I can't find this page.",
       desc: "But don't worry, you can find many more on your homepage.",
-      home_button: "Home"
-    }
+      home_button: "Home",
+    },
   },
   common: {
     error: "Error",
     is_loading: "Loading...",
-    process_take_few_second: "This process may take a few seconds, please do not close this page.",
-  }
+    process_take_few_second:
+      "This process may take a few seconds, please do not close this page.",
+  },
 };
 
 export default en;
