@@ -38,13 +38,13 @@ const en = {
     intro: {
       header: "Hi, I'm Hoang",
       description:
-        "I am currently a Regulatory Affair Executive. This website is not about my jobs but about my life. ❤️",
+        " I'm working at a Web3 Studio. Welcome to My Blog to enjoy everything about Marathon, Web3 and more",
       image: "/assets/images/myview.png",
       links: [
         {
           icon: "FaFacebook",
-          title: "Visit Hoang Profile",
-          link: "https://www.facebook.com/giotgiot/",
+          title: "Visit My Link3",
+          link: "https://link3.to/nguyenhuyhoang",
         },
       ],
     },
