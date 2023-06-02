@@ -21,7 +21,7 @@ const vi = {
       },
       {
         icon: "SiLinkedin",
-        link: "www.linkedin.com/in/nguyenhuyhoang11",
+        link: "https://www.linkedin.com/in/nguyenhuyhoang11/",
       },
       {
         icon: "SiFacebook",
@@ -40,8 +40,8 @@ const vi = {
       links: [
         {
           icon: "SiFacebook",
-          title: "Hoang Profile",
-          link: "https://www.facebook.com/NguyenHuyHoangOfficial",
+          title: "Visit My Link3",
+          link: "https://link3.to/nguyenhuyhoang",
         },
       ],
     },
@@ -59,9 +59,9 @@ const vi = {
         value: ["tutorial", "tip"],
       },
       {
-        name: "Notion",
+        name: "Marathon",
         description:
-          "Các bài viết có nội dung về Notion và các tiện ích xung quanh Notion.",
+          "Các bài viết có nội dung về Marathon và chạy bộ nói chung.",
         value: ["notion"],
       },
       {
