@@ -62,7 +62,7 @@ const vi = {
         name: "Marathon",
         description:
           "Các bài viết có nội dung về Marathon và chạy bộ nói chung.",
-        value: ["notion"],
+        value: ["marathon"],
       },
       {
         name: "Khác",
