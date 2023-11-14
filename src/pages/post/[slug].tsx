@@ -120,7 +120,9 @@ const PostPage = ({
                 <Icon icon="HiEye" />
                 <span>
                   {trans.post.views(
-                    isNaN(Number(post?.views)) ? 0 : post.views
+                    isNaN(Number(post?.views)) || !Number(post?.views)
+                      ? 0
+                      : post.views
                   )}
                 </span>
               </div>
