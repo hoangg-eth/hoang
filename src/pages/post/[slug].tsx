@@ -40,34 +40,42 @@ const PostPage = ({
   const router = useRouter();
   const trans = useTrans();
   let [stateRelatedPosts, setStateRelatedPosts] = useState(relatedPosts);
-  let locale = router.locale ?? 'vi';
+  let locale = router.locale ?? "vi";
 
   const onScroll = useCallback(() => {
     const pathname = location.pathname;
-    const postsLocal = JSON.parse(localStorage.getItem(Constant.LOCALSTORAGE_POSTS) ?? '{}');
+    const postsLocal = JSON.parse(
+      localStorage.getItem(Constant.LOCALSTORAGE_POSTS) ?? "{}"
+    );
     const { scrollY } = window;
     const { scrollHeight } = document.body;
-    
-    if(pathname in postsLocal && moment().diff(moment(postsLocal[pathname]), 'm', true) >= 15){
-        delete postsLocal[pathname]
+
+    if (
+      pathname in postsLocal &&
+      moment().diff(moment(postsLocal[pathname]), "m", true) >= 15
+    ) {
+      delete postsLocal[pathname];
     }
 
-    if(scrollY >= scrollHeight * 0.4 && !(pathname in postsLocal)) {
+    if (scrollY >= scrollHeight * 0.4 && !(pathname in postsLocal)) {
       fetch(Route.api.post.updateViews(slug, locale), { method: "POST" });
       postsLocal[pathname] = moment().toISOString();
-      localStorage.setItem(Constant.LOCALSTORAGE_POSTS, JSON.stringify(postsLocal))
+      localStorage.setItem(
+        Constant.LOCALSTORAGE_POSTS,
+        JSON.stringify(postsLocal)
+      );
     }
   }, [locale, slug]);
 
   useEffect(() => {
-    if(stateRelatedPosts !== relatedPosts) {
+    if (stateRelatedPosts !== relatedPosts) {
       setStateRelatedPosts(relatedPosts);
     }
 
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => {
-       window.removeEventListener("scroll", onScroll);
-    }
+      window.removeEventListener("scroll", onScroll);
+    };
   }, [stateRelatedPosts, relatedPosts, onScroll]);
 
   if (!post) return <PageNotFound />;
@@ -97,16 +105,24 @@ const PostPage = ({
               {post.title}
             </h1>
             <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">
-              {trans.post.published_at_by(post.published.start, post.authors[0].name, locale)}
+              {trans.post.published_at_by(
+                post.published.start,
+                post.authors[0].name,
+                locale
+              )}
             </p>
             <div className="mt-6 flex items-center justify-start gap-2 text-sm font-medium text-gray-600 dark:text-gray-300">
               <div className="flex items-center gap-1">
-                <Icon icon="HiOutlineClock"/>
+                <Icon icon="HiOutlineClock" />
                 <span>{trans.post.reading_time(post.readingTime)}</span>
               </div>
               <div className="flex items-center gap-1">
-                <Icon icon="HiEye"/>
-                <span>{trans.post.views(post.views)}</span>
+                <Icon icon="HiEye" />
+                <span>
+                  {trans.post.views(
+                    isNaN(Number(post?.views)) ? 0 : post.views
+                  )}
+                </span>
               </div>
             </div>
           </div>
@@ -151,7 +167,7 @@ export const getStaticPaths: GetStaticPaths = async ({ locales }) => {
     params: {
       slug: post.slug,
     },
-    locale: post.language
+    locale: post.language,
   }));
 
   return {
@@ -189,11 +205,16 @@ export const getStaticProps: GetStaticProps = async (context) => {
     if (post.language !== locale) {
       return {
         notFound: true,
-      }
+      };
     }
     let tags = post.tags;
     relatedPosts = [...posts]
-      .filter((x) => x.tags.some((y: any) => tags.includes(y)) && x.id !== post.id && context.locale === x.language)
+      .filter(
+        (x) =>
+          x.tags.some((y: any) => tags.includes(y)) &&
+          x.id !== post.id &&
+          context.locale === x.language
+      )
       .map((value) => ({ value, sort: Math.random() }))
       .sort((a, b) => a.sort - b.sort)
       .map(({ value }) => value);
