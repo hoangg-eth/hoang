@@ -9,7 +9,7 @@ interface PostCardProps {
 
 const PostCard = ({ post }: PostCardProps) => {
   const trans = useTrans();
-  
+
   return (
     <div className="w-full rounded-md border border-gray-300 bg-white dark:border-gray-600 dark:bg-dark scale-100 hover:scale-[1.02] active:scale-[0.97] motion-safe:transform-gpu transition duration-100 motion-reduce:hover:scale-100 animate-shadow">
       <Link
@@ -39,15 +39,23 @@ const PostCard = ({ post }: PostCardProps) => {
           </div>
         </div>
         <div className="p-4">
-          <span className="text-lg font-bold text-gray-800 dark:text-gray-100">{post.title}</span>
+          <span className="text-lg font-bold text-gray-800 dark:text-gray-100">
+            {post.title}
+          </span>
           <div className="mt-2 flex items-center justify-start gap-2 text-sm font-medium text-gray-600 dark:text-gray-300">
             <div className="flex items-center gap-1">
-              <Icon icon="HiOutlineClock"/>
-              <span>{ trans.post.reading_time(post.readingTime) }</span>
+              <Icon icon="HiOutlineClock" />
+              <span>{trans.post.reading_time(post.readingTime)}</span>
             </div>
             <div className="flex items-center gap-1">
-              <Icon icon="HiEye"/>
-              <span>{ trans.post.views(post.views) }</span>
+              <Icon icon="HiEye" />
+              <span>
+                {trans.post.views(
+                  isNaN(Number(post?.views)) || !Number(post?.views)
+                    ? 0
+                    : post.views
+                )}
+              </span>
             </div>
           </div>
           <p className="mt-4 mb-2 text-sm text-gray-600 dark:text-gray-300">
