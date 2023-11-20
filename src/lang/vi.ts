@@ -51,12 +51,12 @@ const vi = {
       {
         name: "Web3",
         description: "Các bài viết liên quan về Web3.",
-        value: ["code", "algorithm"],
+        value: ["web3"],
       },
       {
         name: "Self Development",
         description: "Các bài viết hướng dẫn hoặc mẹo cuộc sống.",
-        value: ["tutorial", "tip"],
+        value: ["tutorial", "tip", "mindset"],
       },
       {
         name: "Marathon",
